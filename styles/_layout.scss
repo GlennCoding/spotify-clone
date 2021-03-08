@@ -3,15 +3,17 @@
 .nav {
     color: $text-color2;
     background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
     position: fixed;
     width: 100%;
     z-index: 100;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
 
     &__brand {
         width: 89px;
@@ -73,11 +75,6 @@
     text-align: center;
     color: $text-color2;
 
-    &__content {
-        padding-top: 100px;
-        padding-bottom: 50px;
-    }
-
     &__gradient-color {
         background-color: #509bf5;
         background-image: -webkit-gradient(
@@ -101,12 +98,19 @@
         background-image: linear-gradient(transparent, #000);
     }
 
+    &__content {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
     &__content--button {
         display: inline-block;
         margin: 32px 0;
     }
 
     &__results {
+        padding: 0 !important;
+
         ::-webkit-scrollbar {
             width: 0px;
             background: transparent;
@@ -115,6 +119,35 @@
             overflow: auto;
             white-space: nowrap;
             display: block;
+        }
+
+        @include md {
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            ul li {
+                display: none;
+            }
+            ul li:nth-child(1),
+            ul li:nth-child(2),
+            ul li:nth-child(3),
+            ul li:nth-child(4),
+            ul li:nth-child(5),
+            ul li:nth-child(6) {
+                display: list-item;
+            }
+
+            .song-result {
+                width: 100%;
+            }
+
+            .song-result__artist,
+            .song-result__title,
+            .btn {
+                display: none;
+            }
         }
     }
 }
@@ -219,6 +252,11 @@
     }
 
     &__top-links {
+        @include md {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__socials {
@@ -227,9 +265,9 @@
 }
 
 .top-links__section {
+    flex: 1 0 0%;
     &--header {
         margin: 50px 0 22px;
-
         font-size: 12px;
         font-weight: 900;
         line-height: 1.4;
@@ -265,7 +303,6 @@
 
     &--links {
         margin: 0 45px 0 0;
-        padding: 0 0 0 15px;
     }
 
     &--copyright {

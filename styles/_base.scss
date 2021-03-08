@@ -1,3 +1,42 @@
+// Variables
+$brand-color: #1db954;
+$accent-color1: rgb(80, 51, 106);
+$accent-color2: rgb(56, 94, 142);
+$text-color1: rgb(0, 0, 0);
+$text-color2: rgb(255, 255, 255);
+
+// Media Queries
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
 // Base reset
 * {
     margin: 0;
@@ -10,13 +49,6 @@
 *::after {
     box-sizing: inherit;
 }
-
-// Variables
-$brand-color: #1db954;
-$accent-color1: rgb(80, 51, 106);
-$accent-color2: rgb(56, 94, 142);
-$text-color1: rgb(0, 0, 0);
-$text-color2: rgb(255, 255, 255);
 
 html {
     box-sizing: border-box;

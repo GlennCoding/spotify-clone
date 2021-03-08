@@ -3,6 +3,11 @@
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 750px;
+
+    @include lg {
+        max-width: 970px;
+    }
 }
 
 .bg-image {
