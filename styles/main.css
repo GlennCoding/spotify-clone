@@ -31,6 +31,9 @@ body {
 
 h1 {
   font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 h2 {
@@ -39,10 +42,18 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.4;
 }
 
 h4 {
   font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5em 0 0.25em;
 }
 
 a {
@@ -53,6 +64,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -80,25 +95,27 @@ img {
   text-transform: uppercase;
   white-space: normal;
 }
-
 .btn-lg {
   font-size: 16px;
   line-height: 1;
   border-radius: 500px;
   padding: 19px 56px 21px;
 }
-
 .btn-green {
   color: #fff;
   background-color: #1db954;
 }
-
 .btn-link {
   color: #1db954;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 10px 0;
   font-weight: 700;
   min-width: 0;
+}
+.btn-sm {
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 500px;
+  letter-spacing: 2px;
 }
 
 .nav {
@@ -239,4 +256,19 @@ img {
 .trends .container {
   padding-top: 60px;
   padding-bottom: 80px;
+}
+
+.more-links {
+  background-color: #fff;
+}
+.more-links .container {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.more-links h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.more-links p {
+  margin: 0.5em 0 1em;
 }/*# sourceMappingURL=main.css.map */

@@ -22,24 +22,30 @@
     min-width: 160px;
     text-transform: uppercase;
     white-space: normal;
-}
 
-.btn-lg {
-    font-size: 16px;
-    line-height: 1;
-    border-radius: 500px;
-    padding: 19px 56px 21px;
-}
+    &-lg {
+        font-size: 16px;
+        line-height: 1;
+        border-radius: 500px;
+        padding: 19px 56px 21px;
+    }
 
-.btn-green {
-    color: #fff;
-    background-color: #1db954;
-}
+    &-green {
+        color: #fff;
+        background-color: #1db954;
+    }
 
-.btn-link {
-    color: #1db954;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 700;
-    min-width: 0;
+    &-link {
+        color: #1db954;
+        padding: 10px 0;
+        font-weight: 700;
+        min-width: 0;
+    }
+
+    &-sm {
+        font-size: 12px;
+        line-height: 1;
+        border-radius: 500px;
+        letter-spacing: 2px;
+    }
 }
