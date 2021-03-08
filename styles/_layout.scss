@@ -17,7 +17,12 @@
         width: 89px;
         height: 27px;
         fill: white;
-        max-width: 100%;
+
+        svg {
+            width: 89px;
+            height: 27px;
+            max-width: 100%;
+        }
     }
 
     &__menu {
@@ -193,5 +198,90 @@
 
     p {
         margin: 0.5em 0 1em;
+    }
+}
+
+.footer {
+    background: #000;
+    color: $text-color2;
+    padding: 50px 0 20px;
+
+    &__brand {
+        width: 89px;
+        height: 27px;
+        fill: white;
+
+        svg {
+            width: 89px;
+            height: 27px;
+            max-width: 100%;
+        }
+    }
+
+    &__top-links {
+    }
+
+    &__socials {
+        margin: 120px 15px 15px;
+    }
+}
+
+.top-links__section {
+    &--header {
+        margin: 50px 0 22px;
+
+        font-size: 12px;
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        a {
+            color: #919496;
+        }
+    }
+
+    &--link {
+        padding: 3px 0 15px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-decoration: none;
+
+        a {
+            color: $text-color2;
+        }
+    }
+}
+
+.footer__bottom-links {
+    display: flex;
+    color: #919496;
+    font-size: 10px;
+
+    a {
+        color: #919496;
+    }
+
+    &--links {
+        margin: 0 45px 0 0;
+        padding: 0 0 0 15px;
+    }
+
+    &--copyright {
+        margin: 0 15px 0 auto;
+        padding: 1em 0;
+    }
+}
+
+.footer__bottom-links--links {
+    li {
+        display: inline-block;
+        margin-right: 24px;
+    }
+
+    a {
+        display: block;
+        padding: 1em 0;
     }
 }

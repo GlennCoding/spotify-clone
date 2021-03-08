@@ -135,6 +135,10 @@ ul {
   width: 89px;
   height: 27px;
   fill: white;
+}
+.nav__brand svg {
+  width: 89px;
+  height: 27px;
   max-width: 100%;
 }
 .nav__menu {
@@ -271,4 +275,71 @@ ul {
 }
 .more-links p {
   margin: 0.5em 0 1em;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  padding: 50px 0 20px;
+}
+.footer__brand {
+  width: 89px;
+  height: 27px;
+  fill: white;
+}
+.footer__brand svg {
+  width: 89px;
+  height: 27px;
+  max-width: 100%;
+}
+.footer__socials {
+  margin: 120px 15px 15px;
+}
+
+.top-links__section--header {
+  margin: 50px 0 22px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.top-links__section--header a {
+  color: #919496;
+}
+.top-links__section--link {
+  padding: 3px 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.top-links__section--link a {
+  color: white;
+}
+
+.footer__bottom-links {
+  display: flex;
+  color: #919496;
+  font-size: 10px;
+}
+.footer__bottom-links a {
+  color: #919496;
+}
+.footer__bottom-links--links {
+  margin: 0 45px 0 0;
+  padding: 0 0 0 15px;
+}
+.footer__bottom-links--copyright {
+  margin: 0 15px 0 auto;
+  padding: 1em 0;
+}
+
+.footer__bottom-links--links li {
+  display: inline-block;
+  margin-right: 24px;
+}
+.footer__bottom-links--links a {
+  display: block;
+  padding: 1em 0;
 }/*# sourceMappingURL=main.css.map */
